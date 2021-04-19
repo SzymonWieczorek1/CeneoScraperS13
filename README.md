@@ -24,3 +24,17 @@
 |Dla ilu nieprzydatne|span[id^="votes-no"]|useless|int|
 
 ## Etap 2 - Ekstrakcja  wszystkich opinii o produkcie i z pojedynczej strony
+- utworzenie swnika do przechowywania wszystkich skdowych pojedynczej opinii
+- utworzenie listy, do ktorej beda dodawane slowniki 
+reprezentujace pojedyncze opinie
+- dodanie petli, w ktorej pobierane byly skladowe kolejnych opinii z pojedynczej strony
+
+## Etap 3 - Ekstrakcja wszystkich opinii o produkcie z wszystkich stron
+- dodanie petli, w ktorej:
+    * pobierana jest strona z opiniami
+    * dla kazdej opinii na stronie pobierane sa jej skladniki
+    * sprawdzane jest, czy istnieje kolajna strona z opiniami, ktore powinny zostac pobrane
+-  zapisanie wszystkich opinii o produkcie do pliku .json
+
+## Etap 4 - Refaktoryzacja kodu
+- parametryzacja identyfikatora opinii
